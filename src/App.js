@@ -1,11 +1,31 @@
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
+import Home from "./views/Home";
+import Search from "./views/Search";
+import Saved from "./views/Saved";
+
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function App() {
   return (
     <div>
-      <Header />
-      <Footer />
+      <Router>
+        <Header />
+
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/saved">
+            <Saved />
+          </Route>
+          <Route path="/search">
+            <Search />
+          </Route>
+        </Switch>
+
+        <Footer />
+      </Router>
     </div>
   );
 }
