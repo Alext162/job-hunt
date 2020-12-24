@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer className="bg-light text-center text-lg-start">
       {/* Copyright */}
-      <div className="text-center p-3" style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}>
+      <div className="text-center p-3" style={{ backgroundColor: "rgb(59, 68, 75)" }}>
         Author: Alex Tipping
       </div>
     </footer>

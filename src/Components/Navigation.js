@@ -1,19 +1,16 @@
+import { nodeName } from "jquery";
 import React from "react";
-import SearchJobs from "./SearchJobs";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.js";
-import "../../src/index.css";
 
 function Navigation() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg" style={{ backgroundColor: "rgb(59, 68, 75)" }}>
       <Link to="/" className="navbar-brand" id="navbar-home">
         JobHunt
       </Link>
 
       <button
-        className="navbar-toggler"
+        className="navbar-toggler navbar-dark"
         type="button"
         data-toggle="collapse"
         data-target="#navbarSupportedContent"
@@ -36,7 +33,6 @@ function Navigation() {
             </Link>
           </li>
         </ul>
-        <SearchJobs />
       </div>
     </nav>
   );

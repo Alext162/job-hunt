@@ -3,6 +3,8 @@ import Footer from "./Components/Footer";
 import Home from "./views/Home";
 import Search from "./views/Search";
 import Saved from "./views/Saved";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.js";
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
