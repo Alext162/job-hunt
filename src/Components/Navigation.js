@@ -1,6 +1,6 @@
-import { nodeName } from "jquery";
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+// eslint-disable-next-line
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
 function Navigation() {
   return (
