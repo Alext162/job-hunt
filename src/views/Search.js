@@ -1,7 +1,7 @@
 import { React, useReducer } from "react";
 import { initialState, reducer } from "../store/reducer";
 import SearchJobs from "../Components/SearchJobs.js";
-import Jobs from "../Components/Jobs.js";
+import ViewSearchedJobs from "../Components/ViewSearchedJobs.js";
 import { encode } from "base-64";
 import "../css/page.css";
 
@@ -75,7 +75,7 @@ function Search() {
   } else if (length === 0 && loading === false) {
     searchResult = `No Jobs :(`;
   } else {
-    searchResult = jobs.map((job, index) => <Jobs key={`${index}`} data={{ job: job }} />);
+    searchResult = jobs.map((job, index) => <ViewSearchedJobs key={`${index}`} data={{ job: job }} />);
   }
 
   return (

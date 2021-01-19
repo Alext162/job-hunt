@@ -1,8 +1,8 @@
 import React from "react";
 import ReactHtmlParser from "react-html-parser";
-import SaveJob from "../Components/SaveJob";
+import SaveJob from "./SaveJob";
 
-function Jobs(props) {
+function ViewSearchedJobs(props) {
   let name, url, description;
 
   //a field that only reed jobs contain
@@ -34,7 +34,7 @@ function Jobs(props) {
         <br />
         {description}
         <br />
-        <SaveJob />
+        <SaveJob data={{ job: props.data.job }} />
         <br />
       </div>
       <br />
@@ -42,4 +42,4 @@ function Jobs(props) {
   );
 }
 
-export default Jobs;
+export default ViewSearchedJobs;

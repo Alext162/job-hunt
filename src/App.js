@@ -1,8 +1,10 @@
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
+
 import Home from "./views/Home";
 import Search from "./views/Search";
 import Saved from "./views/Saved";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.js";
 
