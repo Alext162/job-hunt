@@ -27,22 +27,6 @@ function ViewJobs(props) {
       });
   };
 
-  // const deleteFromDB = (idTodelete) => {
-  //   parseInt(idTodelete);
-  //   let objIdToDelete = null;
-  //   state.data.forEach((dat) => {
-  //     if (dat.id == idTodelete) {
-  //       objIdToDelete = dat._id;
-  //     }
-  //   });
-
-  //   axios.delete("http://localhost:3001/api/deleteData", {
-  //     data: {
-  //       id: objIdToDelete,
-  //     },
-  //   });
-  // };
-
   const { jobs } = state;
 
   return (
